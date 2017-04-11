@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,IAAI;EACF,UAAU,EAHI,IAAI",
+"sources": ["dynamic-styles.scss"],
+"names": [],
+"file": "dynamic-styles.css"
+}

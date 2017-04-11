@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title ng-bind="title">App</title>
+    <base href="/">
+    <!-- build:css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/dynamic-styles.css">
+    <!-- endbuild  -->
+    <!-- build:js -->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-touch/angular-touch.js"></script>
+    <script src="node_modules/angular-sanitize/angular-sanitize.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+
+    <script src="js/appConfig.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services/httpService.js"></script>
+    <script src="js/controllers/homeController.js"></script>
+    <script src="js/controllers/aboutController.js"></script>
+    <script src="js/directives/itemDirective.js"></script>
+    <script src="js/components/headerComponent.js"></script>
+    <script src="js/components/footerComponent.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+    <header-component></header-component>
+    <ng-view></ng-view>
+</body>
+</html>
