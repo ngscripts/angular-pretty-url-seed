@@ -60,15 +60,24 @@ gulp.task('css', ['sass'], function () {
 
 gulp.task('js', ['css'], function () {
    return gulp.src([
-        './node_modules/jquery/dist/jquery.js',
-        './node_modules/angular/angular.js',
-        './node_modules/angular-route/angular-route.js'
-    ])
+       './node_modules/jquery/dist/jquery.js',
+           './node_modules/angular/angular.js',
+           './node_modules/angular-route/angular-route.js',
+           './node_modules/angular-animate/angular-animate.js',
+           './node_modules/angular-touch/angular-touch.js',
+           './node_modules/angular-sanitize/angular-sanitize.js',
+           './node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js'
+       ])
         .pipe(concat(outputLibsJs))
         .pipe(uglify({mangle: false}))
         .pipe(gulp.dest(buildPath)) &&
     gulp.src([
-        './js/**/*.js'
+        './js/appConfig.js',
+        './js/app.js',
+        './js/services/*.js',
+        './js/controllers/*.js',
+        './js/directives/*.js',
+        './js/components/*.js'
     ])
         .pipe(concat(outputScriptsJs))
         .pipe(uglify({mangle: false}))

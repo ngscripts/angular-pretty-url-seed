@@ -6,7 +6,7 @@ var path = require('path');
 
 var expressApp = express();
 
-expressApp.set('port', 3000);
+expressApp.set('port', 3333);
 
 expressApp.use(express.static(path.join(__dirname, '/')));
 expressApp.use("/*", express.static(path.join(__dirname, 'index.html')));
