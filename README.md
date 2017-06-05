@@ -73,11 +73,29 @@ two new folders in your project.
 `angular-seed` changes this location through the `.bowerrc` file. Putting it in the `app` folder
 makes it easier to serve the files by a web server.*
 
-### Run the Application
+### Run the Application in Development Mode
 
-We have preconfigured the project with a simple development web server. The simplest way to start
-this server is:
+You can run the development server without - No Watchers Required:
 
 ```
-npm start
+npm run serve
 ```
+
+### Build the Application
+
+Build the Application to `/build` folder using the following Command:
+
+```
+npm run build
+```
+
+### Run the Application using Production Server
+
+Run the Application from `/build` folder using the following Command:
+
+```
+npm run serve-prod
+```
+
+
+### -----  ENJOY ----
